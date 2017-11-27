@@ -56,7 +56,7 @@ CodeType Helper Methods
     func (*CodeType) Set(value string) error
     func (*CodeType) String() string
 
-eBay Settings
+Package Settings
 ---
     var (
         // API gateway address. Sandbox or production.
