@@ -5,7 +5,7 @@ xsdbay
 Installation
 ---
 
-    go install github.com/766b/xsdbay
+    go get github.com/766b/xsdbay
 
 Usage
 ---
