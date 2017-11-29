@@ -133,6 +133,12 @@ func (c complexType) GetElements() (r []Xyer) {
 			}
 		}
 	}
+	for _, a := range c.Attribute {
+		if a.Annotation.Skip() || !a.Annotation.IncludedIn(callID, request) {
+			continue
+		}
+		r = append(r, a)
+	}
 	if c.Sequence != nil {
 		for _, e := range c.Sequence.Element {
 			if e.Annotation.Skip() || !e.Annotation.IncludedIn(callID, request) {
