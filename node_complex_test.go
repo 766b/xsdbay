@@ -7,7 +7,8 @@ import (
 )
 
 func Test_complexType_DeepValidator(t *testing.T) {
-	data, err := ioutil.ReadFile("ebaysvc_1035.xsd")
+	fileType = extXSD
+	data, err := ioutil.ReadFile("ebaysvc.xsd")
 	if err != nil {
 		t.Fatal(err)
 	}
