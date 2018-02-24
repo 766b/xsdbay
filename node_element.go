@@ -112,9 +112,9 @@ func (e element) Validator(callName, path string) {
 		}
 	}
 
-	//for _, r := range rules {
-	//Validator[callName].Sprintf("//\r\n%s", e.TypeDetails().Key(key).ValidationString(r, path))
-	//}
+	for _, r := range rules {
+		Validator[callName].Sprintf("%s", e.TypeDetails().Key(key).ValidationString(r, path))
+	}
 
 	if related != nil {
 		related.Validator(callName, newPath)

@@ -26,6 +26,8 @@ type EbAppInfo struct {
 	EbListBasedOn
 	EbNoCalls
 
+	PresentDetails string
+
 	CallInfo     []ebCallInfo
 	CallName     string
 	SeeLink      []ebSeeLink
